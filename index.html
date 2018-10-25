@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  	<script src="lib/scroll.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+	<script src="lib/SimpleTabs.js"></script>
+	
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.4.0/css/perfect-scrollbar.min.css">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="lib/scroll.css">
+</head>
+<body>
+
+
+
+
+
+	<div class="prices j-tab ">
+		<div class="prices-titles j-tab-nav">
+			<div class="prices-titles__item prices-titles-item tab-item active">
+				<a href="#item1">1С:Бухгалтерия 8 Базовая версия</a>
+				<div class="prices-titles-item-helper"></div>
+			</div>
+			<div class="prices-titles__item prices-titles-item tab-item">
+				<a href="#item2">Решения на платформе<br>1С:Бухгалтерия Базовая</a> 
+				<div class="prices-titles-item-helper"></div>
+			</div>
+			<div class="prices-titles__item prices-titles-item tab-item">
+				<a href="#item3">1C:Бухгалтерия 8 Проф</a> 
+				<div class="prices-titles-item-helper"></div>
+			</div>
+			<div class="prices-titles__item prices-titles-item tab-item">
+				<a href="#item4">1С:Бухгалтерия 8 ПРОФ комплект <br>на 5 пользователей</a> 
+				<div class="prices-titles-item-helper"></div>
+			</div>
+			<div class="prices-titles__item prices-titles-item tab-item">
+				<a href="#item5">1С:Бухгалтерия 8 КОРП</a> 
+				<div class="prices-titles-item-helper"></div>
+			</div>
+			<div class="prices-titles__item prices-titles-item tab-item">
+				<a href="#item6">1С:Бухгалтерия - МСФО</a> 
+				<div class="prices-titles-item-helper"></div>
+			</div>
+			<div class="prices-titles__item prices-titles-item tab-item">
+				<a href="#item7">1С:Бухгалтерия государственного <br>учреждения</a> 
+				<div class="prices-titles-item-helper"></div>
+			</div>
+			<div class="prices-titles__item prices-titles-item tab-item">
+				<a href="#item8">1С:Бухгалтерия<br>Отраслевые решения</a> 
+				<div class="prices-titles-item-helper"></div>
+			</div>
+		</div>
+		<script>
+			(function(){
+				let q = document.querySelectorAll('.prices-titles-item');
+				q.forEach(function(el){
+					if( el.offsetHeight > 68 ){
+						let w = el.querySelector('.prices-titles-item-helper');
+						w.className+= " big";
+					}
+				})
+			})()
+		</script>
+
+
+		<div class="prices-content">
+			<div class="prices-content-top">
+				<div class="prices-content-top-left">
+					Варианты поставки
+				</div>
+				<div class="prices-content-top-right opened"></div>
+			</div>
+
+			<div class="prices-content-bottom js-scroll-block tab-content-item"  id="item3" style="display: none;">
+				<div class="js-accordion prices-accordion">
+					<div class="prices-accordion-item">
+						<div class="prices-accordion-title">
+							<div class="prices-accordion-title__left">
+								Основная поставка
+							</div>
+							<div class="prices-accordion-title__right">
+								<div class="prices-accordion-price">
+									33 600 Р
+								</div>
+								<div class="prices-accordion-buy">
+									Купить
+								</div>
+							</div>
+						</div>
+						<div class="prices-accordion-content">
+							<div class="prices-bonus-list">
+								<div class="prices-bonus-list__item prices-bonus-list__item_negative">
+									единовременная работа нескольких пользователей
+								</div>
+								<div class="prices-bonus-list__item prices-bonus-list__item_negative">
+									учет нескольких организаций в одной базе
+								</div>
+								<div class="prices-bonus-list__item">
+									учет в обособленных подразделениях
+								</div>
+								<div class="prices-bonus-list__item">
+									возможность изменения и доработки конфигурации
+								</div>
+								<div class="prices-bonus-list__item">
+									поддержка территориально распределенных информационных баз
+								</div>
+								<div class="prices-bonus-list__item">
+									5 часов работы специалиста по 1С
+								</div>
+								<div class="prices-bonus-list__item">
+									3 месяца поддержки 1С:ИТС
+								</div>
+								<div class="prices-bonus-list__item">
+									доставка, установка
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="prices-accordion-item">
+						<div class="prices-accordion-title">
+							<div class="prices-accordion-title__left">
+								Основная поставка
+							</div>
+							<div class="prices-accordion-title__right">
+								<div class="prices-accordion-price">
+									33 600 Р
+								</div>
+								<div class="prices-accordion-buy">
+									Купить
+								</div>
+							</div>
+						</div>
+						<div class="prices-accordion-content">
+							<div class="prices-bonus-list">
+								<div class="prices-bonus-list__item prices-bonus-list__item_negative">
+									единовременная работа нескольких пользователей
+								</div>
+								<div class="prices-bonus-list__item prices-bonus-list__item_negative">
+									учет нескольких организаций в одной базе
+								</div>
+								<div class="prices-bonus-list__item">
+									учет в обособленных подразделениях
+								</div>
+								<div class="prices-bonus-list__item">
+									возможность изменения и доработки конфигурации
+								</div>
+								<div class="prices-bonus-list__item">
+									поддержка территориально распределенных информационных баз
+								</div>
+								<div class="prices-bonus-list__item">
+									5 часов работы специалиста по 1С
+								</div>
+								<div class="prices-bonus-list__item">
+									3 месяца поддержки 1С:ИТС
+								</div>
+								<div class="prices-bonus-list__item">
+									доставка, установка
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="prices-accordion-item">
+						<div class="prices-accordion-title">
+							<div class="prices-accordion-title__left">
+								Основная поставка
+							</div>
+							<div class="prices-accordion-title__right">
+								<div class="prices-accordion-price">
+									33 600 Р
+								</div>
+								<div class="prices-accordion-buy">
+									Купить
+								</div>
+							</div>
+						</div>
+						<div class="prices-accordion-content">
+							<div class="prices-bonus-list">
+								<div class="prices-bonus-list__item prices-bonus-list__item_negative">
+									единовременная работа нескольких пользователей
+								</div>
+								<div class="prices-bonus-list__item prices-bonus-list__item_negative">
+									учет нескольких организаций в одной базе
+								</div>
+								<div class="prices-bonus-list__item">
+									учет в обособленных подразделениях
+								</div>
+								<div class="prices-bonus-list__item">
+									возможность изменения и доработки конфигурации
+								</div>
+								<div class="prices-bonus-list__item">
+									поддержка территориально распределенных информационных баз
+								</div>
+								<div class="prices-bonus-list__item">
+									5 часов работы специалиста по 1С
+								</div>
+								<div class="prices-bonus-list__item">
+									3 месяца поддержки 1С:ИТС
+								</div>
+								<div class="prices-bonus-list__item">
+									доставка, установка
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<div class="prices-content-bottom js-scroll-block tab-content-item"  id="item1" style="display: none;">
+				<div class="js-accordion prices-accordion">
+					<div class="prices-accordion-item">
+						<div class="prices-accordion-title">
+							<div class="prices-accordion-title__left">
+								Основная поставка
+							</div>
+							<div class="prices-accordion-title__right">
+								<div class="prices-accordion-price">
+									33 600 Р
+								</div>
+								<div class="prices-accordion-buy">
+									Купить
+								</div>
+							</div>
+						</div>
+						<div class="prices-accordion-content">
+							<div class="prices-bonus-list">
+								<div class="prices-bonus-list__item prices-bonus-list__item_negative">
+									единовременная работа нескольких пользователей
+								</div>
+								<div class="prices-bonus-list__item prices-bonus-list__item_negative">
+									учет нескольких организаций в одной базе
+								</div>
+								<div class="prices-bonus-list__item">
+									учет в обособленных подразделениях
+								</div>
+								<div class="prices-bonus-list__item">
+									возможность изменения и доработки конфигурации
+								</div>
+								<div class="prices-bonus-list__item">
+									поддержка территориально распределенных информационных баз
+								</div>
+								<div class="prices-bonus-list__item">
+									5 часов работы специалиста по 1С
+								</div>
+								<div class="prices-bonus-list__item">
+									3 месяца поддержки 1С:ИТС
+								</div>
+								<div class="prices-bonus-list__item">
+									доставка, установка
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="prices-accordion-item">
+						<div class="prices-accordion-title">
+							<div class="prices-accordion-title__left">
+								Основная поставка
+							</div>
+							<div class="prices-accordion-title__right">
+								<div class="prices-accordion-price">
+									33 600 Р
+								</div>
+								<div class="prices-accordion-buy">
+									Купить
+								</div>
+							</div>
+						</div>
+						<div class="prices-accordion-content">
+							<div class="prices-bonus-list">
+								<div class="prices-bonus-list__item prices-bonus-list__item_negative">
+									единовременная работа нескольких пользователей
+								</div>
+								<div class="prices-bonus-list__item prices-bonus-list__item_negative">
+									учет нескольких организаций в одной базе
+								</div>
+								<div class="prices-bonus-list__item">
+									учет в обособленных подразделениях
+								</div>
+								<div class="prices-bonus-list__item">
+									возможность изменения и доработки конфигурации
+								</div>
+								<div class="prices-bonus-list__item">
+									поддержка территориально распределенных информационных баз
+								</div>
+								<div class="prices-bonus-list__item">
+									5 часов работы специалиста по 1С
+								</div>
+								<div class="prices-bonus-list__item">
+									3 месяца поддержки 1С:ИТС
+								</div>
+								<div class="prices-bonus-list__item">
+									доставка, установка
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="prices-accordion-item">
+						<div class="prices-accordion-title">
+							<div class="prices-accordion-title__left">
+								Основная поставка
+							</div>
+							<div class="prices-accordion-title__right">
+								<div class="prices-accordion-price">
+									33 600 Р
+								</div>
+								<div class="prices-accordion-buy">
+									Купить
+								</div>
+							</div>
+						</div>
+						<div class="prices-accordion-content">
+							<div class="prices-bonus-list">
+								<div class="prices-bonus-list__item prices-bonus-list__item_negative">
+									единовременная работа нескольких пользователей
+								</div>
+								<div class="prices-bonus-list__item prices-bonus-list__item_negative">
+									учет нескольких организаций в одной базе
+								</div>
+								<div class="prices-bonus-list__item">
+									учет в обособленных подразделениях
+								</div>
+								<div class="prices-bonus-list__item">
+									возможность изменения и доработки конфигурации
+								</div>
+								<div class="prices-bonus-list__item">
+									поддержка территориально распределенных информационных баз
+								</div>
+								<div class="prices-bonus-list__item">
+									5 часов работы специалиста по 1С
+								</div>
+								<div class="prices-bonus-list__item">
+									3 месяца поддержки 1С:ИТС
+								</div>
+								<div class="prices-bonus-list__item">
+									доставка, установка
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	
+	<script src="app.js"></script>
+</body>
+</html>
