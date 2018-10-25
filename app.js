@@ -71,5 +71,15 @@ require(['SimpleTabs'], function( SimpleTabs ){
 	});
 
 });
+			(function(){
+				let q = document.querySelectorAll('.prices-titles-item');
+				q.forEach(function(el){
+					if( el.offsetHeight > 68 ){
+						let w = el.querySelector('.prices-titles-item-helper');
+						w.className+= " big";
+					}
+				})
+			})()
+
 
 
